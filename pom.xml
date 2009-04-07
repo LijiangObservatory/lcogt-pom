@@ -8,8 +8,8 @@
 	<description>Pom to be inherited by all lcogt projects.</description>
 
 	<scm>
-		<connection>scm:svn:svn://svn/repos/telsoft/Lco/lcogt-pom/trunk</connection>
-		<developerConnection>scm:svn:svn+ssh://svn/repos/telsoft/Lco/lcogt-pom/trunk</developerConnection>
+		<connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</connection>
+		<developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
 	</scm>
 
 
@@ -66,14 +66,16 @@
 	<!-- Remote repository deployment -->
 	<distributionManagement>
 		<repository>
-			<id>central</id>
-			<url>dav:http://devlin3lpl:8081/artifactory/libs-releases</url>
+			<id>versionsba-releases</id>
+			<name>versionsba-releases</name>
+			<url>dav:http://versionsba:8081/artifactory/libs-releases-local</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
-			<url>dav:http://devlin3lpl:8081/artifactory/libs-snapshots</url>
+			<id>versionsba-snapshots</id>
+			<name>versionsba-snapshots</name>
+			<url>dav:http://versionsba:8081/artifactory/libs-snapshots-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
-
 </project>
+

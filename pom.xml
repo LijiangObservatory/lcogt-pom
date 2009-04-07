@@ -4,7 +4,7 @@
 	<artifactId>lcogt-pom</artifactId>
 	<packaging>pom</packaging>
 	<name>Super pom</name>
-	<version>0.3.0</version>
+	<version>0.3.1</version>
 	<description>Pom to be inherited by all lcogt projects.</description>
 
 	<scm>
@@ -68,12 +68,12 @@
 		<repository>
 			<id>versionsba-releases</id>
 			<name>versionsba-releases</name>
-			<url>dav:http://versionsba:8081/artifactory/libs-releases-local</url>
+			<url>dav:http://versionsba:8080/artifactory/libs-releases-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>versionsba-snapshots</id>
 			<name>versionsba-snapshots</name>
-			<url>dav:http://versionsba:8081/artifactory/libs-snapshots-local</url>
+			<url>dav:http://versionsba:8080/artifactory/libs-snapshots-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 

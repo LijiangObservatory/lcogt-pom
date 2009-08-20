@@ -1,16 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.lcogt</groupId>
 	<artifactId>lcogt-pom</artifactId>
 	<packaging>pom</packaging>
 	<name>Super pom</name>
-	<version>0.4.0-SNAPSHOT</version>
+	<version>0.4.1-SNAPSHOT</version>
 	<description>Pom to be inherited by all lcogt projects.</description>
 
 	<scm>
-		<connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</connection>
-		<developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
+		<connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.4.x</connection>
+		<developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.4.x</developerConnection>
 	</scm>
 	
 	<dependencies>

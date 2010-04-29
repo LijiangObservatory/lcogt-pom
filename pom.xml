@@ -77,12 +77,12 @@
 	<!-- Remote repository deployment -->
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
+			<id>nexus</id>
 			<name>releases</name>
 			<url>http://buildsba:8081/nexus/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
+			<id>nexus</id>
 			<name>snapshots</name>
 			<url>http://buildsba:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>

@@ -10,6 +10,8 @@
 
 	<properties>
 		<!-- Versions for LCOGT projects -->
+		<jtcs.version>2.11.0-SNAPSHOT</jtcs.version>
+		<instrument.version>2.11.0-SNAPSHOT</instrument.version>
 		<pubSub.version>0.15.0-SNAPSHOT</pubSub.version>
 		<telemetry.version>0.10.0-SNAPSHOT</telemetry.version>
 		<jcil-version>0.9.0-SNAPSHOT</jcil-version>
@@ -33,6 +35,16 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- LCOGT artifacts -->
+			<dependency>
+				<groupId>org.lcogt</groupId>
+				<artifactId>jTcs</artifactId>
+				<version>${jtcs.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lcogt</groupId>
+				<artifactId>instrument-agent</artifactId>
+				<version>${instrument.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.lcogt</groupId>
 				<artifactId>pubSub</artifactId>

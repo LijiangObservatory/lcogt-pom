@@ -8,10 +8,12 @@
     <version>0.6.0-SNAPSHOT</version>
     <description>Pom to be inherited by all lcogt projects.</description>
 
-    <!-- Versions for LCOGT projects -->
     <properties>
+   		<!-- Versions for LCOGT projects -->
         <pubSub.version>0.15.0-SNAPSHOT</pubSub.version>
         <telemetry.version>0.10.0-SNAPSHOT</telemetry.version>
+    	<!-- Versions for thirdparty projects -->
+        <jade.version>4.0.1-2</jade.version>
     </properties>
 
     <!-- Centralised dependency management -->
@@ -28,6 +30,13 @@
                 <artifactId>telemetry-core</artifactId>
                 <version>${telemetry.version}</version>
             </dependency>
+            
+            <!-- Third party artifacts -->
+            <dependency>
+                <groupId>com.tilab</groupId>
+                <artifactId>jade</artifactId>
+                <version>${jade.version}</version>
+            </dependency>
 
             <!-- External artifacts -->
             <dependency>
@@ -39,11 +48,6 @@
                 <groupId>cds.astro</groupId>
                 <artifactId>astro</artifactId>
                 <version>1.2.2</version>
-            </dependency>
-            <dependency>
-                <groupId>com.tilab</groupId>
-                <artifactId>jade</artifactId>
-                <version>4.0.1-2</version>
             </dependency>
             <dependency>
                 <groupId>hsqldb</groupId>

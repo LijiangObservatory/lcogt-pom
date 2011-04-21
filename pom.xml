@@ -20,7 +20,7 @@
 		<enclosure-version>0.3.1-SNAPSHOT</enclosure-version>
 		<harvest-version>0.5.0-SNAPSHOT</harvest-version>
 		<reduction-version>0.2.0-SNAPSHOT</reduction-version>
-		<sequencer-version>0.2.0-SNAPSHOT</sequencer-version>
+		<sequencer-version>0.3.0-SNAPSHOT</sequencer-version>
 		<services-version>0.2.0-SNAPSHOT</services-version>
 		<site-version>0.2.0-SNAPSHOT</site-version>
 		<facilityServices-version>0.1.0-SNAPSHOT</facilityServices-version>

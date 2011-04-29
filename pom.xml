@@ -97,7 +97,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.lcogt</groupId>
-				<artifactId>jcil</artifactId>
+				<artifactId>jcil-${os.arch}</artifactId>
 				<version>${jcil-version}</version>
 			</dependency>
 
@@ -109,17 +109,17 @@
 			</dependency>
 			<dependency>
 				<groupId>ral.slalib</groupId>
-				<artifactId>sla</artifactId>
+				<artifactId>sla-${os.arch}</artifactId>
 				<version>${sla-version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.lcogt</groupId>
-				<artifactId>jTPoint</artifactId>
+				<artifactId>jTPoint-${os.arch}</artifactId>
 				<version>${jtpoint-version}</version>
 			</dependency>
 			<dependency>
 				<groupId>ral</groupId>
-				<artifactId>jtpk</artifactId>
+				<artifactId>jtpk-${os.arch}</artifactId>
 				<version>${jtpk-version}</version>
 			</dependency>
 

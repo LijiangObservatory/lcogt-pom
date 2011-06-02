@@ -278,6 +278,7 @@
 				<configuration>
 					<archive>
 						<manifestEntries>
+							<Implementation-Title>${scmBranch}</Implementation-Title>
 							<Implementation-Version>${buildNumber}</Implementation-Version>
 						</manifestEntries>
 					</archive>

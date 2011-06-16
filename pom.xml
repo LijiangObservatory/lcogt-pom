@@ -35,9 +35,10 @@
 		<facilityServices-version>0.1.0-SNAPSHOT</facilityServices-version>
 		<!-- Versions for third-party projects -->
 		<jade.version>4.0.1-2</jade.version>
-		<jtpoint-version>0.5.0-SNAPSHOT</jtpoint-version>
+		<jtpoint-version>18.13-0-SNAPSHOT</jtpoint-version>
 		<jtpk-version>1.11-0-SNAPSHOT</jtpk-version>
-		<sla-version>0.5.0-SNAPSHOT</sla-version>
+		<jtcspk-version>8.4-0-SNAPSHOT</jtcspk-version>
+		<sla-version>11.0508-0-SNAPSHOT</sla-version>
 	</properties>
 
 	<!-- Centralised dependency management -->
@@ -130,6 +131,11 @@
 				<groupId>ral</groupId>
 				<artifactId>jtpk-${os.arch}</artifactId>
 				<version>${jtpk-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lcogt</groupId>
+				<artifactId>jtcspk-${os.arch}</artifactId>
+				<version>${jtcspk-version}</version>
 			</dependency>
 
 			<!-- External artifacts -->

@@ -7,9 +7,9 @@
 	<name>Super pom</name>
 	<version>0.6.0-SNAPSHOT</version>
 	<description>Pom to be inherited by all lcogt projects.</description>
-	
-	<!-- SCM information required by buildnumber-maven-plugin.
-	     Not used (it uses 'svn info'), but fails if it's not here. -->
+
+	<!-- SCM information required by buildnumber-maven-plugin. Not used (it 
+		uses 'svn info'), but fails if it's not here. -->
 	<scm>
 		<connection>scm:svn:http://versionsba/svn/telsoft</connection>
 		<developerConnection>scm:svn:http://versionsba/svn/telsoft</developerConnection>
@@ -39,6 +39,10 @@
 		<jtpk-version>1.11-0-SNAPSHOT</jtpk-version>
 		<jtcspk-version>8.4-0-SNAPSHOT</jtcspk-version>
 		<sla-version>11.0508-0-SNAPSHOT</sla-version>
+		<fitsheader-version>0.1.0-SNAPSHOT</fitsheader-version>
+		<jstarsearch-version>0.1.0-SNAPSHOT</jstarsearch-version>
+		<sextractor-version>2.5.0</sextractor-version>
+		<wcsfit-version>0.1.0-SNAPSHOT</wcsfit-version>
 	</properties>
 
 	<!-- Centralised dependency management -->
@@ -136,6 +140,21 @@
 				<groupId>org.lcogt</groupId>
 				<artifactId>jtcspk-${os.arch}</artifactId>
 				<version>${jtcspk-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lcogt</groupId>
+				<artifactId>FITSheader</artifactId>
+				<version>${fitsheader-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lcogt</groupId>
+				<artifactId>wcsfit</artifactId>
+				<version>${wcsfit-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lcogt</groupId>
+				<artifactId>jStarSearch</artifactId>
+				<version>${jstarsearch-version}</version>
 			</dependency>
 
 			<!-- External artifacts -->
@@ -276,7 +295,7 @@
 					<doUpdate>false</doUpdate>
 				</configuration>
 			</plugin>
-			
+
 			<!-- Include Subversion revision number in manifest -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

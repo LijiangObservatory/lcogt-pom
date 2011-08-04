@@ -23,6 +23,7 @@
 		<instrument.version>2.11.0-SNAPSHOT</instrument.version>
 		<pubSub.version>0.15.0-SNAPSHOT</pubSub.version>
 		<telemetry.version>0.10.0-SNAPSHOT</telemetry.version>
+		<telemetry-utils.version>0.1.0-SNAPSHOT</telemetry-utils.version>
 		<jcil-version>0.9.0-SNAPSHOT</jcil-version>
 		<pubsub-version>0.15.0-SNAPSHOT</pubsub-version>
 		<jtcsCommon-version>0.2.0-SNAPSHOT</jtcsCommon-version>
@@ -68,6 +69,11 @@
 				<groupId>org.lcogt.telemetry</groupId>
 				<artifactId>telemetry-core</artifactId>
 				<version>${telemetry.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.lcogt.telemetry</groupId>
+				<artifactId>telemetry-utils</artifactId>
+				<version>${telemetry-utils.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.lcogt</groupId>

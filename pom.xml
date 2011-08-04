@@ -72,7 +72,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.lcogt.telemetry</groupId>
-				<artifactId>telemetry-utils</artifactId>
+				<artifactId>telemetry-utils-core</artifactId>
 				<version>${telemetry-utils.version}</version>
 			</dependency>
 			<dependency>

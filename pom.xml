@@ -32,7 +32,7 @@
 		<reduction-version>0.2.0-SNAPSHOT</reduction-version>
 		<sequencer-version>0.3.0-SNAPSHOT</sequencer-version>
 		<services-version>0.2.0-SNAPSHOT</services-version>
-		<site-version>0.2.0-SNAPSHOT</site-version>
+		<site-version>0.3.0-SNAPSHOT</site-version>
 		<facilityServices-version>0.1.0-SNAPSHOT</facilityServices-version>
 		<!-- Versions for third-party projects -->
 		<jade.version>4.0.1-2</jade.version>

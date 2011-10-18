@@ -19,6 +19,7 @@
 
 	<properties>
 		<!-- Versions for LCOGT projects -->
+		<commons.version>0.1.0-SNAPSHOT</commons.version>
 		<jtcs.version>2.11.0-SNAPSHOT</jtcs.version>
 		<instrument.version>2.11.0-SNAPSHOT</instrument.version>
 		<pubSub.version>0.15.0-SNAPSHOT</pubSub.version>
@@ -51,6 +52,11 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- LCOGT artifacts -->
+			<dependency>
+				<groupId>org.lcogt</groupId>
+				<artifactId>commons</artifactId>
+				<version>${commons.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.lcogt</groupId>
 				<artifactId>jTcs</artifactId>

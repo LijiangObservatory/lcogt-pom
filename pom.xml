@@ -28,7 +28,7 @@
       <jtcs.version>2.11.0-SNAPSHOT</jtcs.version>
       <instrument.version>2.11.0-SNAPSHOT</instrument.version>
       <pubSub.version>0.15.0-SNAPSHOT</pubSub.version>
-      <schemas.version>0.16.0-SNAPSHOT</schemas.version>
+      <schemas.version>0.17.0-SNAPSHOT</schemas.version>
       <telemetry.version>0.10.0-SNAPSHOT</telemetry.version>
       <telemetry-utils.version>0.1.0-SNAPSHOT</telemetry-utils.version>
       <jcil-version>0.9.0-SNAPSHOT</jcil-version>

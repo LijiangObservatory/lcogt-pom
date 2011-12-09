@@ -42,10 +42,10 @@
       <facilityServices-version>0.1.0-SNAPSHOT</facilityServices-version>
       <!-- Versions for third-party projects -->
       <jade.version>4.0.1-3-SNAPSHOT</jade.version>
-      <jtpoint-version>18.13-0-SNAPSHOT</jtpoint-version>
-      <jtpk-version>1.11-0-SNAPSHOT</jtpk-version>
-      <jtcspk-version>8.4-0-SNAPSHOT</jtcspk-version>
-      <sla-version>11.0508-0-SNAPSHOT</sla-version>
+      <jtpoint-version>18.13-1-SNAPSHOT</jtpoint-version>
+      <jtpk-version>1.11-1-SNAPSHOT</jtpk-version>
+      <jtcspk-version>8.4-1-SNAPSHOT</jtcspk-version>
+      <sla-version>11.0508-1-SNAPSHOT</sla-version>
       <fitsheader-version>0.1.0-SNAPSHOT</fitsheader-version>
       <jstarsearch-version>0.1.0-SNAPSHOT</jstarsearch-version>
       <sextractor-version>2.5.0</sextractor-version>

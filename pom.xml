@@ -290,6 +290,16 @@
                <artifactId>maven-javadoc-plugin</artifactId>
                <version>2.8</version>
             </plugin>
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>dependency-maven-plugin</artifactId>
+               <version>1.0</version>
+            </plugin>
+            <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>versions-maven-plugin</artifactId>
+               <version>1.2</version>
+            </plugin>
          </plugins>
       </pluginManagement>
 

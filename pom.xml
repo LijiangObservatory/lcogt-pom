@@ -49,7 +49,7 @@
       <fitsheader-version>0.1.0-SNAPSHOT</fitsheader-version>
       <jstarsearch-version>0.2.0-SNAPSHOT</jstarsearch-version>
       <sextractor-version>2.5.0</sextractor-version>
-      <wcsfit-version>0.1.0-SNAPSHOT</wcsfit-version>
+      <wcsfit-version>0.2.0-SNAPSHOT</wcsfit-version>
       <reduction-server-version>0.1.0-SNAPSHOT</reduction-server-version>
    </properties>
 

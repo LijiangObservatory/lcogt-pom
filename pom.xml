@@ -383,6 +383,11 @@
             <version>2.3.1</version>
             <configuration>
                <archive>
+                  <manifest>
+                     <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                     <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>                 
+                  </manifest>
+                  <!-- Override default implementation entries with Subversion metadata -->
                   <manifestEntries>
                      <Implementation-Title>${scmBranch}</Implementation-Title>
                      <Implementation-Version>${buildNumber}</Implementation-Version>

@@ -41,7 +41,7 @@
       <site-version>0.3.0-SNAPSHOT</site-version>
       <facilityServices-version>0.1.0-SNAPSHOT</facilityServices-version>
       <!-- Versions for third-party projects -->
-      <jade.version>4.1.1-1-SNAPSHOT</jade.version>
+      <jade.version>4.2.0-1-SNAPSHOT</jade.version>
       <jtpoint-version>18.13-1-SNAPSHOT</jtpoint-version>
       <jtpk-version>1.11-1-SNAPSHOT</jtpk-version>
       <jtcspk-version>8.4-1-SNAPSHOT</jtcspk-version>

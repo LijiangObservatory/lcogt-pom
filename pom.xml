@@ -5,7 +5,7 @@
    <artifactId>lcogt-pom</artifactId>
    <packaging>pom</packaging>
    <name>Super pom</name>
-   <version>0.7.0-SNAPSHOT</version>
+   <version>0.2.0-SNAPSHOT</version>
    <description>Pom to be inherited by all lcogt projects.</description>
 
    <organization>
@@ -16,175 +16,15 @@
    <!-- SCM information required by buildnumber-maven-plugin. Not used (it 
       uses 'svn info'), but fails if it's not here. -->
    <scm>
-      <connection>scm:svn:http://versionsba/svn/telsoft</connection>
-      <developerConnection>scm:svn:http://versionsba/svn/telsoft</developerConnection>
-      <url>http://versionsba/svn/telsoft</url>
+      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</connection>
+      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
+      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</url>
       <tag>HEAD</tag>
    </scm>
-
-   <properties>
-      <!-- Versions for LCOGT projects -->
-      <commons.version>0.2.0-SNAPSHOT</commons.version>
-      <jtcs.version>2.11.0-SNAPSHOT</jtcs.version>
-      <instrument.version>2.11.0-SNAPSHOT</instrument.version>
-      <pubSub.version>0.15.0-SNAPSHOT</pubSub.version>
-      <schemas.version>0.17.0-SNAPSHOT</schemas.version>
-      <telemetry.version>0.10.0-SNAPSHOT</telemetry.version>
-      <telemetry-utils.version>0.1.0-SNAPSHOT</telemetry-utils.version>
-      <jcil-version>0.9.0-SNAPSHOT</jcil-version>
-      <jtcsCommon-version>0.2.0-SNAPSHOT</jtcsCommon-version>
-      <enclosure-version>0.3.1-SNAPSHOT</enclosure-version>
-      <harvest-version>0.5.0-SNAPSHOT</harvest-version>
-      <reduction-version>0.2.0-SNAPSHOT</reduction-version>
-      <sequencer-version>0.3.0-SNAPSHOT</sequencer-version>
-      <services-version>0.2.0-SNAPSHOT</services-version>
-      <site-version>0.3.0-SNAPSHOT</site-version>
-      <facilityServices-version>0.1.0-SNAPSHOT</facilityServices-version>
-      <!-- Versions for third-party projects -->
-      <jade.version>4.2.0-1-SNAPSHOT</jade.version>
-      <jtpoint-version>18.13-1-SNAPSHOT</jtpoint-version>
-      <jtpk-version>1.11-1-SNAPSHOT</jtpk-version>
-      <jtcspk-version>8.4-1-SNAPSHOT</jtcspk-version>
-      <sla-version>11.0508-1-SNAPSHOT</sla-version>
-      <fitsheader-version>0.2.0-SNAPSHOT</fitsheader-version>
-      <jstarsearch-version>0.2.0-SNAPSHOT</jstarsearch-version>
-      <sextractor-version>2.5.0</sextractor-version>
-      <wcsfit-version>0.2.0-SNAPSHOT</wcsfit-version>
-      <reduction-server-version>0.1.0-SNAPSHOT</reduction-server-version>
-   </properties>
 
    <!-- Centralised dependency management -->
    <dependencyManagement>
       <dependencies>
-         <!-- LCOGT artifacts -->
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>commons</artifactId>
-            <version>${commons.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>jTcs</artifactId>
-            <version>${jtcs.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>instrument-agent</artifactId>
-            <version>${instrument.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>pubSub</artifactId>
-            <version>${pubSub.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt.telemetry</groupId>
-            <artifactId>schemas</artifactId>
-            <version>${schemas.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt.telemetry</groupId>
-            <artifactId>telemetry-core</artifactId>
-            <version>${telemetry.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt.telemetry</groupId>
-            <artifactId>telemetry-utils-core</artifactId>
-            <version>${telemetry-utils.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>jTcsCommon</artifactId>
-            <version>${jtcsCommon-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>enclosure-agent</artifactId>
-            <version>${enclosure-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>reduction-agent</artifactId>
-            <version>${reduction-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>reduction</artifactId>
-            <version>${reduction-server-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt.dataharvester</groupId>
-            <artifactId>harvester</artifactId>
-            <version>${harvest-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt.sequencer</groupId>
-            <artifactId>sequencer-agent</artifactId>
-            <version>${sequencer-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>telescope-services</artifactId>
-            <version>${services-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>site-agent</artifactId>
-            <version>${site-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>facility-services</artifactId>
-            <version>${facilityServices-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>jcil-${os.arch}</artifactId>
-            <version>${jcil-version}</version>
-         </dependency>
-
-         <!-- Third party artifacts -->
-         <dependency>
-            <groupId>com.tilab</groupId>
-            <artifactId>jade</artifactId>
-            <version>${jade.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>ral.slalib</groupId>
-            <artifactId>sla-${os.arch}</artifactId>
-            <version>${sla-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>jTPoint-${os.arch}</artifactId>
-            <version>${jtpoint-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>ral</groupId>
-            <artifactId>jtpk-${os.arch}</artifactId>
-            <version>${jtpk-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>jtcspk-${os.arch}</artifactId>
-            <version>${jtcspk-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>FITSheader</artifactId>
-            <version>${fitsheader-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>wcsfit</artifactId>
-            <version>${wcsfit-version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.lcogt</groupId>
-            <artifactId>jStarSearch</artifactId>
-            <version>${jstarsearch-version}</version>
-         </dependency>
-
          <!-- External artifacts -->
          <dependency>
             <groupId>commons-lang</groupId>
@@ -292,6 +132,11 @@
             </plugin>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-help-plugin</artifactId>
+               <version>2.1.1</version>
+            </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-dependency-plugin</artifactId>
                <version>2.3</version>
             </plugin>
@@ -299,11 +144,6 @@
                <groupId>org.codehaus.mojo</groupId>
                <artifactId>versions-maven-plugin</artifactId>
                <version>1.2</version>
-            </plugin>
-            <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-help-plugin</artifactId>
-               <version>2.1.1</version>
             </plugin>
          </plugins>
       </pluginManagement>
@@ -328,12 +168,8 @@
             </configuration>
          </plugin>
          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-help-plugin</artifactId>
-         </plugin>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
+             <groupId>org.apache.maven.plugins</groupId>
+             <artifactId>maven-dependency-plugin</artifactId>
          </plugin>
          <plugin>
             <groupId>org.codehaus.mojo</groupId>
@@ -357,7 +193,10 @@
                </execution>
             </executions>
          </plugin>
-
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-help-plugin</artifactId>
+         </plugin>
          <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>buildnumber-maven-plugin</artifactId>
@@ -375,6 +214,7 @@
                <doUpdate>false</doUpdate>
             </configuration>
          </plugin>
+         
 
          <!-- Include Subversion revision number in manifest -->
          <plugin>

@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
    <groupId>org.lcogt</groupId>
    <artifactId>lcogt-pom</artifactId>
@@ -16,9 +15,9 @@
    <!-- SCM information required by buildnumber-maven-plugin. Not used (it 
       uses 'svn info'), but fails if it's not here. -->
    <scm>
-      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</connection>
-      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
-      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</url>
+      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.2.x</connection>
+      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.2.x</developerConnection>
+      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.2.x</url>
       <tag>HEAD</tag>
    </scm>
 

@@ -15,9 +15,9 @@
    <!-- SCM information required by buildnumber-maven-plugin. Not used (it 
       uses 'svn info'), but fails if it's not here. -->
    <scm>
-      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</connection>
-      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
-      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</url>
+      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.3.x</connection>
+      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.3.x</developerConnection>
+      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.3.x</url>
    </scm>
 
    <!-- Centralised dependency management -->

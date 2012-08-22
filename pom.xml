@@ -4,7 +4,7 @@
    <artifactId>lcogt-pom</artifactId>
    <packaging>pom</packaging>
    <name>Super pom</name>
-   <version>0.2.0-SNAPSHOT</version>
+   <version>0.3.0-SNAPSHOT</version>
    <description>Pom to be inherited by all lcogt projects.</description>
    <organization>
       <name>Las Cumbres Observatory</name>
@@ -13,10 +13,9 @@
    <!-- SCM information required by buildnumber-maven-plugin. Not used (it 
       uses 'svn info'), but fails if it's not here. -->
    <scm>
-      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.2.x</connection>
-      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.2.x</developerConnection>
-      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/branches/0.2.x</url>
-      <tag>HEAD</tag>
+      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</connection>
+      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
+      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</url>
    </scm>
    <!-- Centralised dependency management -->
    <dependencyManagement>

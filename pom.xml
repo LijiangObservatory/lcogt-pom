@@ -7,12 +7,10 @@
    <name>Super pom</name>
    <version>0.2.0-SNAPSHOT</version>
    <description>Pom to be inherited by all lcogt projects.</description>
-
    <organization>
       <name>Las Cumbres Observatory</name>
       <url>http://www.lcogt.net/</url>
    </organization>
-
    <!-- SCM information required by buildnumber-maven-plugin. Not used (it 
       uses 'svn info'), but fails if it's not here. -->
    <scm>
@@ -21,7 +19,6 @@
       <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</url>
       <tag>HEAD</tag>
    </scm>
-
    <!-- Centralised dependency management -->
    <dependencyManagement>
       <dependencies>
@@ -66,10 +63,23 @@
             <artifactId>jetty-server</artifactId>
             <version>8.0.0.M3</version>
          </dependency>
+         <dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>1.6</version>
+         </dependency>
+         <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.4</version>
+         </dependency>
+         <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>1.7.1</version>
+         </dependency>
       </dependencies>
    </dependencyManagement>
-
-
    <!-- Common dependencies across all projects -->
    <dependencies>
       <dependency>
@@ -90,7 +100,6 @@
          <version>1.2.17</version>
       </dependency>
    </dependencies>
-
    <reporting>
       <plugins>
          <plugin>
@@ -119,9 +128,7 @@
          </plugin>
       </plugins>
    </reporting>
-
    <build>
-
       <!-- To define the plugin version in your parent POM -->
       <pluginManagement>
          <plugins>
@@ -147,8 +154,6 @@
             </plugin>
          </plugins>
       </pluginManagement>
-
-
       <!-- Webdav extension for deployment -->
       <extensions>
          <extension>
@@ -157,7 +162,6 @@
             <version>1.0-beta-2</version>
          </extension>
       </extensions>
-
       <plugins>
          <plugin>
             <inherited>true</inherited>
@@ -168,8 +172,8 @@
             </configuration>
          </plugin>
          <plugin>
-             <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-dependency-plugin</artifactId>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
          </plugin>
          <plugin>
             <groupId>org.codehaus.mojo</groupId>
@@ -214,8 +218,6 @@
                <doUpdate>false</doUpdate>
             </configuration>
          </plugin>
-         
-
          <!-- Include Subversion revision number in manifest -->
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -225,9 +227,10 @@
                <archive>
                   <manifest>
                      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                     <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>                 
+                     <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                   </manifest>
-                  <!-- Override default implementation entries with Subversion metadata -->
+                  <!-- Override default implementation entries with Subversion 
+                     metadata -->
                   <manifestEntries>
                      <Implementation-Title>${scmBranch}</Implementation-Title>
                      <Implementation-Version>${buildNumber}</Implementation-Version>
@@ -237,7 +240,6 @@
          </plugin>
       </plugins>
    </build>
-
    <!-- Remote repository deployment -->
    <distributionManagement>
       <repository>
@@ -255,6 +257,4 @@
          <url>scp://buildsba.lco.gtn/opt/javadocs/</url>
       </site>
    </distributionManagement>
-
 </project>
-

@@ -18,12 +18,13 @@
       <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
       <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</url>
    </scm>
-
+   <prerequisites>
+      <maven>2.2.1</maven>
+   </prerequisites>
    <properties>
-       <powermock.version>1.5.6</powermock.version>
-       <metrics.version>3.1.0</metrics.version>
+      <powermock.version>1.5.6</powermock.version>
+      <metrics.version>3.1.0</metrics.version>
    </properties>
-
    <!-- Centralised dependency management -->
    <dependencyManagement>
       <dependencies>
@@ -92,42 +93,42 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>18.0</version>
-        </dependency>
-        <dependency>
+         </dependency>
+         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
             <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
+         </dependency>
+         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-jvm</artifactId>
             <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
+         </dependency>
+         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-servlets</artifactId>
             <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
+         </dependency>
+         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-servlet</artifactId>
             <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
+         </dependency>
+         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-logback</artifactId>
             <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
+         </dependency>
+         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-jetty8</artifactId>
             <version>${metrics.version}</version>
-        </dependency>
-        <dependency>
+         </dependency>
+         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-graphite</artifactId>
             <version>${metrics.version}</version>
-        </dependency>
+         </dependency>
       </dependencies>
    </dependencyManagement>
    <!-- Common dependencies across all projects -->
@@ -144,12 +145,12 @@
          <version>${powermock.version}</version>
          <scope>test</scope>
       </dependency>
-       <dependency>
-           <groupId>org.powermock</groupId>
-           <artifactId>powermock-api-mockito</artifactId>
-           <version>${powermock.version}</version>
-           <scope>test</scope>
-       </dependency>
+      <dependency>
+         <groupId>org.powermock</groupId>
+         <artifactId>powermock-api-mockito</artifactId>
+         <version>${powermock.version}</version>
+         <scope>test</scope>
+      </dependency>
       <dependency>
          <groupId>log4j</groupId>
          <artifactId>log4j</artifactId>
@@ -161,17 +162,17 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>2.8</version>
+            <version>2.9.1</version>
          </plugin>
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jxr-plugin</artifactId>
-            <version>2.3</version>
+            <version>2.4</version>
          </plugin>
          <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>versions-maven-plugin</artifactId>
-            <version>1.2</version>
+            <version>2.1</version>
             <reportSets>
                <reportSet>
                   <reports>
@@ -191,27 +192,27 @@
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-javadoc-plugin</artifactId>
-               <version>2.8</version>
+               <version>2.10</version>
             </plugin>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-help-plugin</artifactId>
-               <version>2.1.1</version>
+               <version>2.2</version>
             </plugin>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-dependency-plugin</artifactId>
-               <version>2.3</version>
+               <version>2.9</version>
             </plugin>
             <plugin>
                <groupId>org.codehaus.mojo</groupId>
                <artifactId>versions-maven-plugin</artifactId>
-               <version>1.2</version>
+               <version>2.1</version>
             </plugin>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-site-plugin</artifactId>
-               <version>3.1</version>
+               <version>3.4</version>
                <dependencies>
                   <dependency><!-- add support for ssh/scp -->
                      <groupId>org.apache.maven.wagon</groupId>
@@ -223,9 +224,8 @@
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
                <artifactId>maven-release-plugin</artifactId>
-               <version>2.3.2</version>
+               <version>2.5.1</version>
             </plugin>
-
          </plugins>
       </pluginManagement>
       <!-- Webdav extension for deployment -->
@@ -240,7 +240,7 @@
          <plugin>
             <inherited>true</inherited>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>2.5.1</version>
+            <version>3.1</version>
             <configuration>
                <source>1.6</source>
                <target>1.6</target>
@@ -261,7 +261,7 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <version>2.1.2</version>
+            <version>2.3</version>
             <executions>
                <execution>
                   <id>attach-sources</id>
@@ -279,7 +279,7 @@
          <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>buildnumber-maven-plugin</artifactId>
-            <version>1.0</version>
+            <version>1.3</version>
             <executions>
                <execution>
                   <phase>validate</phase>
@@ -297,7 +297,7 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
-            <version>2.3.1</version>
+            <version>2.5</version>
             <configuration>
                <archive>
                   <manifest>
@@ -320,7 +320,7 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-pmd-plugin</artifactId>
-            <version>3.0.1</version>
+            <version>3.2</version>
             <configuration>
                <targetJdk>1.6</targetJdk>
             </configuration>
@@ -328,9 +328,9 @@
          <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
-            <version>2.5.2</version>
+            <version>2.5.5</version>
             <configuration>
-                <effort>Low</effort>
+               <effort>Low</effort>
             </configuration>
          </plugin>
       </plugins>

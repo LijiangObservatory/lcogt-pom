@@ -25,6 +25,7 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <powermock.version>1.5.6</powermock.version>
       <metrics.version>3.1.0</metrics.version>
+      <joda.time.version>2.7</joda.time.version>
    </properties>
    <!-- Centralised dependency management -->
    <dependencyManagement>
@@ -129,6 +130,11 @@
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-graphite</artifactId>
             <version>${metrics.version}</version>
+         </dependency>
+         <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda.time.version}</version>
          </dependency>
       </dependencies>
    </dependencyManagement>

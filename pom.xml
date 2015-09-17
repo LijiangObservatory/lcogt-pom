@@ -14,9 +14,9 @@
    <!-- SCM information required by buildnumber-maven-plugin. Not used (it 
       uses 'svn info'), but fails if it's not here. -->
    <scm>
-      <connection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</connection>
-      <developerConnection>scm:svn:http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</developerConnection>
-      <url>http://versionsba/svn/telsoft/Lco/lcogt-pom/trunk</url>
+      <connection>scm:git:ssh://git@git.lco.gtn:7999/sit/lcogt-pom.git</connection>
+      <developerConnection>scm:git:ssh://git@git.lco.gtn:7999/sit/lcogt-pom.git</developerConnection>
+      <url>http://git.lco.gtn/projects/SIT/repos/lcogt-pom/browse</url>
    </scm>
    <prerequisites>
       <maven>3.0.5</maven>
@@ -301,6 +301,7 @@
                </execution>
             </executions>
             <configuration>
+                <shortRevisionLength>7</shortRevisionLength> 
                <doCheck>false</doCheck>
                <doUpdate>false</doUpdate>
             </configuration>

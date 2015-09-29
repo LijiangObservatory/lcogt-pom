@@ -23,7 +23,7 @@
    </prerequisites>
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <powermock.version>1.5.6</powermock.version>
+      <powermock.version>1.6.2</powermock.version>
       <metrics.version>3.1.0</metrics.version>
       <joda.time.version>2.7</joda.time.version>
       <guice.version>3.0</guice.version>
@@ -258,10 +258,10 @@
          <plugin>
             <inherited>true</inherited>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version>
+            <version>3.3</version>
             <configuration>
-               <source>1.6</source>
-               <target>1.6</target>
+               <source>1.8</source>
+               <target>1.8</target>
             </configuration>
          </plugin>
          <plugin>
@@ -339,9 +339,9 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-pmd-plugin</artifactId>
-            <version>3.2</version>
+            <version>3.5</version>
             <configuration>
-               <targetJdk>1.6</targetJdk>
+               <targetJdk>1.8</targetJdk>
             </configuration>
          </plugin>
          <plugin>
@@ -350,6 +350,16 @@
             <version>2.5.5</version>
             <configuration>
                <effort>Low</effort>
+            </configuration>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+               <systemPropertyVariables>
+                  <javax.xml.accessExternalDTD>all</javax.xml.accessExternalDTD>
+                  <javax.xml.accessExternalSchema>all</javax.xml.accessExternalSchema>
+               </systemPropertyVariables>
             </configuration>
          </plugin>
       </plugins>

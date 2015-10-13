@@ -26,7 +26,7 @@
       <powermock.version>1.6.2</powermock.version>
       <metrics.version>3.1.0</metrics.version>
       <joda.time.version>2.7</joda.time.version>
-      <guice.version>3.0</guice.version>
+      <guice.version>4.0</guice.version>
    </properties>
    <!-- Centralised dependency management -->
    <dependencyManagement>

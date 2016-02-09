@@ -27,6 +27,14 @@
         <metrics.version>3.1.0</metrics.version>
         <joda.time.version>2.7</joda.time.version>
         <guice.version>4.0</guice.version>
+        <nar.plugin.version>3.2.4-SNAPSHOT</nar.plugin.version>
+        <sla.version>12.130524-3-SNAPSHOT</sla.version>
+        <jtcspk.version>9.71-4-SNAPSHOT</jtcspk.version>
+        <jcil.version>0.5.0-SNAPSHOT</jcil.version>
+        <jtpoint.version>18.13-7-SNAPSHOT</jtpoint.version>
+        <jtpk.version>2.3-4-SNAPSHOT</jtpk.version>
+        <wcstools.version>3.8.1-SNAPSHOT</wcstools.version>
+        <sextractor.version>2.5.0-SNAPSHOT</sextractor.version>
     </properties>
     <!-- Centralised dependency management -->
     <dependencyManagement>

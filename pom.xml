@@ -336,7 +336,7 @@
                         <!-- Override default implementation entries with Subversion
                            metadata -->
                         <manifestEntries>
-                            <Implementation-Title>${GIT_BRANCH}</Implementation-Title>
+                            <Implementation-Title>${scmBranch}</Implementation-Title>
                             <Implementation-Version>${buildNumber}</Implementation-Version>
                         </manifestEntries>
                     </archive>

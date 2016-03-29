@@ -27,7 +27,7 @@
         <metrics.version>3.1.0</metrics.version>
         <joda.time.version>2.7</joda.time.version>
         <guice.version>4.0</guice.version>
-        <nar.plugin.version>3.2.4-SNAPSHOT</nar.plugin.version>
+        <nar.plugin.version>3.4.0</nar.plugin.version>
         <sla.version>12.130524-3-SNAPSHOT</sla.version>
         <jtcspk.version>9.71-4-SNAPSHOT</jtcspk.version>
         <jcil.version>0.5.0-SNAPSHOT</jcil.version>

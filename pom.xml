@@ -269,8 +269,8 @@
             <extension>
                <groupId>kr.motd.maven</groupId>
                <artifactId>os-maven-plugin</artifactId>
-               <version>1.4.2.LCOGT-SNAPSHOT</version>
-	    </extension>
+               <version>1.5.0.Final</version>
+        </extension>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-webdav</artifactId>

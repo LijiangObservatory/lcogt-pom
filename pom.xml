@@ -32,7 +32,7 @@
         <jtcspk.version>9.71-4-SNAPSHOT</jtcspk.version>
         <jcil.version>0.5.0-SNAPSHOT</jcil.version>
         <jtpoint.version>18.13-7-SNAPSHOT</jtpoint.version>
-        <jtpk.version>2.3-4-SNAPSHOT</jtpk.version>
+        <jtpk.version>2.3-5-SNAPSHOT</jtpk.version>
         <wcstools.version>3.8.1-SNAPSHOT</wcstools.version>
         <sextractor.version>2.5.0-SNAPSHOT</sextractor.version>
     </properties>

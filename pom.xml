@@ -27,7 +27,7 @@
         <metrics.version>3.1.0</metrics.version>
         <joda.time.version>2.7</joda.time.version>
         <guice.version>4.0</guice.version>
-        <nar.plugin.version>3.4.0</nar.plugin.version>
+        <nar.plugin.version>3.5.0</nar.plugin.version>
         <sla.version>12.130524-3-SNAPSHOT</sla.version>
         <jtcspk.version>9.71-4-SNAPSHOT</jtcspk.version>
         <jcil.version>0.5.0-SNAPSHOT</jcil.version>
@@ -199,6 +199,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.9.1</version>
+                <configuration>
+                    <additionalparam>-Xdoclint:none</additionalparam>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -228,7 +231,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10</version>
+                    <version>2.10.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -248,7 +251,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.4</version>
+                    <version>3.5.1</version>
                     <dependencies>
                         <dependency><!-- add support for ssh/scp -->
                             <groupId>org.apache.maven.wagon</groupId>
@@ -260,7 +263,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.1</version>
+                    <version>2.5.3</version>
                 </plugin>
             </plugins>
         </pluginManagement>

@@ -23,7 +23,7 @@
     </prerequisites>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <powermock.version>1.6.2</powermock.version>
+        <powermock.version>1.6.5</powermock.version>
         <metrics.version>3.1.2</metrics.version>
         <joda.time.version>2.7</joda.time.version>
         <guice.version>4.0</guice.version>

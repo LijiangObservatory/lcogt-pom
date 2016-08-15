@@ -24,7 +24,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <powermock.version>1.6.2</powermock.version>
-        <metrics.version>3.1.0</metrics.version>
+        <metrics.version>3.1.2</metrics.version>
         <joda.time.version>2.7</joda.time.version>
         <guice.version>4.0</guice.version>
         <nar.plugin.version>3.5.0</nar.plugin.version>
@@ -36,6 +36,7 @@
         <wcstools.version>3.8.1-SNAPSHOT</wcstools.version>
         <sextractor.version>2.5.0-SNAPSHOT</sextractor.version>
         <log4j2.version>2.6.2</log4j2.version>
+        <junit.version>4.12</junit.version>
     </properties>
     <!-- Centralised dependency management -->
     <dependencyManagement>
@@ -163,7 +164,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

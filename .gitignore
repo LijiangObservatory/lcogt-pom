@@ -1,0 +1,16 @@
+# General Maven
+target
+.sonar
+*versionsBackup
+
+# Intellij
+.idea
+*.iml
+*.class
+
+# Site software clutter
+harvester/axis.xls
+harvester/test.dat
+instrument-agent/null/
+reduction-agent/sextractor/
+schemas/output.xml

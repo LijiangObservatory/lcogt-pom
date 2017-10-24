@@ -215,7 +215,7 @@
         <dependency>
             <groupId>com.lmax</groupId>
             <artifactId>disruptor</artifactId>
-            <version>3.3.5</version>
+            <version>3.3.7</version>
         </dependency>
     </dependencies>
     <reporting>

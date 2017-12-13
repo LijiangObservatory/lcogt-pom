@@ -371,7 +371,7 @@
                     <doUpdate>false</doUpdate>
                 </configuration>
             </plugin>
-            <!-- Include Subversion revision number in manifest -->
+            <!-- Include Git commit hash in manifest -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -382,11 +382,13 @@
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                         </manifest>
-                        <!-- Override default implementation entries with Subversion
-                           metadata -->
+                        <!-- Override default implementation entries with Git metadata -->
                         <manifestEntries>
                             <Implementation-Title>${scmBranch}</Implementation-Title>
+                            <!-- buildNumber is the Git commit hash -->
                             <Implementation-Version>${buildNumber}</Implementation-Version>
+                            <Build-number>${build.number}</Build-number>
+                            <Build-start-time>${build.start.time}</Build-start-time>
                         </manifestEntries>
                     </archive>
                 </configuration>

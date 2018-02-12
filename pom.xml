@@ -35,7 +35,7 @@
         <jtpk.version>2.3-5-SNAPSHOT</jtpk.version>
         <wcstools.version>3.8.1-SNAPSHOT</wcstools.version>
         <sextractor.version>2.5.0-SNAPSHOT</sextractor.version>
-        <log4j2.version>2.5</log4j2.version>
+        <log4j2.version>2.10.0</log4j2.version>
         <junit.version>4.12</junit.version>
         <hamcrest.version>1.3</hamcrest.version>
     </properties>

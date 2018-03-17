@@ -216,7 +216,7 @@
         <dependency>
             <groupId>com.lmax</groupId>
             <artifactId>disruptor</artifactId>
-            <version>$(disruptor-version}</version>
+            <version>${disruptor-version}</version>
         </dependency>
     </dependencies>
     <reporting>

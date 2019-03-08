@@ -5,19 +5,12 @@
     <artifactId>lcogt-pom</artifactId>
     <packaging>pom</packaging>
     <name>Super pom</name>
-    <version>0.5.0-SNAPSHOT</version>
+    <version>0.6.0-SNAPSHOT</version>
     <description>Pom to be inherited by all lcogt projects.</description>
     <organization>
         <name>Las Cumbres Observatory</name>
         <url>http://www.lcogt.net/</url>
     </organization>
-    <!-- SCM information required by buildnumber-maven-plugin. Not used (it
-       uses 'svn info'), but fails if it's not here. -->
-    <scm>
-        <connection>scm:git:ssh://git@git.lco.gtn:7999/sit/lcogt-pom.git</connection>
-        <developerConnection>scm:git:ssh://git@git.lco.gtn:7999/sit/lcogt-pom.git</developerConnection>
-        <url>http://git.lco.gtn/projects/SIT/repos/lcogt-pom/browse</url>
-    </scm>
     <prerequisites>
         <maven>3.0.5</maven>
     </prerequisites>
@@ -307,7 +300,7 @@
                 <groupId>kr.motd.maven</groupId>
                 <artifactId>os-maven-plugin</artifactId>
                 <version>1.5.0.Final</version>
-        </extension>
+            </extension>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-webdav</artifactId>
@@ -355,24 +348,33 @@
                 <artifactId>maven-help-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>buildnumber-maven-plugin</artifactId>
-                <version>1.4</version>
+                <groupId>pl.project13.maven</groupId>
+                <artifactId>git-commit-id-plugin</artifactId>
+                <version>2.2.6</version>
                 <executions>
                     <execution>
-                        <phase>validate</phase>
+                        <id>get-the-git-infos</id>
                         <goals>
-                            <goal>create</goal>
+                            <goal>revision</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <shortRevisionLength>7</shortRevisionLength>
-                    <doCheck>false</doCheck>
-                    <doUpdate>false</doUpdate>
+                    <injectAllReactorProjects>true</injectAllReactorProjects>
+                    <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
+                    <prefix>git</prefix>
+                    <verbose>false</verbose>
+                    <generateGitPropertiesFile>true</generateGitPropertiesFile>
+                    <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties
+                    </generateGitPropertiesFilename>
+                    <format>json</format>
+                    <gitDescribe>
+                        <skip>false</skip>
+                        <always>false</always>
+                        <dirty>-dirty</dirty>
+                    </gitDescribe>
                 </configuration>
             </plugin>
-            <!-- Include Git commit hash in manifest -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -385,11 +387,10 @@
                         </manifest>
                         <!-- Override default implementation entries with Git metadata -->
                         <manifestEntries>
-                            <Implementation-Title>${scmBranch}</Implementation-Title>
-                            <!-- buildNumber is the Git commit hash -->
-                            <Implementation-Version>${buildNumber}</Implementation-Version>
-                            <Build-number>${build.number}</Build-number>
-                            <Build-start-time>${build.start.time}</Build-start-time>
+                            <Implementation-Title>${git.branch}</Implementation-Title>
+                            <Implementation-Version>${git.commit.id}</Implementation-Version>
+                            <Build-number>"${env:BUILD_NUMBER}"</Build-number>
+                            <Build-start-time>${env:BUILD_TIMESTAMP:-local-build}</Build-start-time>
                         </manifestEntries>
                     </archive>
                 </configuration>

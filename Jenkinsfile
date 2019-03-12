@@ -14,8 +14,8 @@ pipeline {
 						buildingTag()
 					}
 					steps {
-						sh 'mvn versions:set -DnewVersion=${GIT_TAG}'
-						sh 'mvn deploy'
+						sh 'mvn --batch-mode versions:set -DnewVersion=${GIT_TAG}'
+						sh 'mvn --batch-mode deploy'
 					}
 				}
 				stage('Snapshot') {
@@ -23,8 +23,8 @@ pipeline {
 						not { buildingTag() }
 					}
 					steps {
-						sh 'mvn versions:set -DnewVersion=${CLEAN_BRANCH_NAME}-SNAPSHOT'
-						sh 'mvn deploy'
+						sh 'mvn --batch-mode versions:set -DnewVersion=${CLEAN_BRANCH_NAME}-SNAPSHOT'
+						sh 'mvn --batch-mode deploy'
 					}
 				}
 			}

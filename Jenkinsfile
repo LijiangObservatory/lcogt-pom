@@ -4,20 +4,29 @@ pipeline {
 	agent any
 	environment {
 		CLEAN_BRANCH_NAME = "${BRANCH_NAME.replace('/', '-')}"
-		SITE_SOFTWARE_VERSION = "${CLEAN_BRANCH_NAME}-SNAPSHOT"
+		GIT_TAG = sh(returnStdout: true, script: "git tag --contains").trim()
 	}
 	stages {
-		stage('Set version') {
-			when {
-				not { branch 'master' }
-			}
-			steps {
-				sh 'mvn versions:set -DnewVersion=${SITE_SOFTWARE_VERSION}'
-			}
-		}
 		stage('Deploy') {
-			steps {
-				sh 'mvn deploy'
+			parallel {
+				stage('Release') {
+					when {
+						buildingTag()
+					}
+					steps {
+						sh 'mvn versions:set -DnewVersion=${GIT_TAG}'
+						sh 'mvn deploy'
+					}
+				}
+				stage('Snapshot') {
+					when {
+						not { buildingTag() }
+					}
+					steps {
+						sh 'mvn versions:set -DnewVersion=${CLEAN_BRANCH_NAME}-SNAPSHOT'
+						sh 'mvn deploy'
+					}
+				}
 			}
 		}
 	}

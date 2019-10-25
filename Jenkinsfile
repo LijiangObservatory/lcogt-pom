@@ -1,33 +1,17 @@
 #!/usr/bin/env groovy
 
+@Library('lco-shared-libs@0.1.0') _
+
 pipeline {
 	agent any
-	environment {
-		CLEAN_BRANCH_NAME = "${BRANCH_NAME.replace('/', '-')}"
-		GIT_TAG = sh(returnStdout: true, script: "git tag --contains").trim()
-	}
 	stages {
 		stage('Deploy') {
-			parallel {
-				stage('Release') {
-					when {
-						buildingTag()
-					}
-					steps {
-						sh 'mvn --batch-mode versions:set -DnewVersion=${GIT_TAG}'
-						sh 'mvn --batch-mode deploy'
-					}
-				}
-				stage('Snapshot') {
-					when {
-						not { buildingTag() }
-					}
-					steps {
-						sh 'mvn --batch-mode versions:set -DnewVersion=${CLEAN_BRANCH_NAME}-SNAPSHOT'
-						sh 'mvn --batch-mode deploy'
-					}
-				}
+			steps {
+				sh 'mvn --batch-mode deploy'
 			}
 		}
+	}
+	post {
+		always { postBuildNotify() }
 	}
 }

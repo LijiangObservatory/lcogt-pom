@@ -4,6 +4,10 @@ This parent POM is used across different projects at LCO including
 the [Site Software Control Interface](https://github.com/LCOGT/site-software-control-interface),
 and the [Reduction Service](http://git.lco.gtn/projects/SIT/repos/reduction-service/browse).
 
+# Manual build
+
+    mvn clean install
+
 # Deploy
 Jenkins will automatically deploy this POM to Nexus when the follow tasks have
 been completed:

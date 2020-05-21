@@ -24,6 +24,7 @@
         <jtcspk.version>9.71-4</jtcspk.version>
         <jcil.version>0.5.1</jcil.version>
         <jtpoint.version>18.13-7</jtpoint.version>
+        <tinyxml.version>2.6.2</tinyxml.version>
         <jtpk.version>2.3-5</jtpk.version>
         <sextractor.version>2.5.0-SNAPSHOT</sextractor.version>
         <log4j2.version>2.12.1</log4j2.version>

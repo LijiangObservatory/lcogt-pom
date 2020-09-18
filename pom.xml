@@ -5,7 +5,7 @@
     <artifactId>lcogt-pom</artifactId>
     <packaging>pom</packaging>
     <name>Super pom</name>
-    <version>0.7.3</version>
+    <version>0.7.4</version>
     <description>Pom to be inherited by all lcogt projects.</description>
     <organization>
         <name>Las Cumbres Observatory</name>
@@ -22,7 +22,7 @@
         <nar.plugin.version>3.5.0</nar.plugin.version>
         <sla.version>12.130524-3</sla.version>
         <jtcspk.version>9.71-4</jtcspk.version>
-        <jcil.version>0.6.1</jcil.version>
+        <jcil.version>0.6.2</jcil.version>
         <jtpoint.version>18.13-7</jtpoint.version>
         <tinyxml.version>2.6.2</tinyxml.version>
         <jtpk.version>2.3-5</jtpk.version>

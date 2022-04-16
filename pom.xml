@@ -5,18 +5,17 @@
     <artifactId>lcogt-pom</artifactId>
     <packaging>pom</packaging>
     <name>Super pom</name>
-    <version>0.8.1</version>
+    <version>0.8.2</version>
     <description>Pom to be inherited by all lcogt projects.</description>
     <organization>
         <name>Las Cumbres Observatory</name>
         <url>http://www.lcogt.net/</url>
     </organization>
     <prerequisites>
-        <maven>3.5</maven>
+        <maven>3.6</maven>
     </prerequisites>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <powermock.version>1.7.4</powermock.version>
         <joda.time.version>2.10.5</joda.time.version>
         <guice.version>4.2.2</guice.version>
         <nar.plugin.version>3.5.0</nar.plugin.version>
@@ -143,18 +142,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-module-junit4</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.powermock</groupId>
-            <artifactId>powermock-api-mockito</artifactId>
-            <version>${powermock.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

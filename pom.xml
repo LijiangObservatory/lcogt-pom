@@ -17,7 +17,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <joda.time.version>2.10.5</joda.time.version>
-        <guice.version>4.2.2</guice.version>
+        <guice.version>5.1.0</guice.version>
         <nar.plugin.version>3.5.0</nar.plugin.version>
         <sla.version>12.130524-3</sla.version>
         <jtcspk.version>9.71-4</jtcspk.version>

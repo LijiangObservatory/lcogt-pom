@@ -19,13 +19,12 @@
         <joda.time.version>2.10.5</joda.time.version>
         <guice.version>5.1.0</guice.version>
         <nar.plugin.version>3.5.0</nar.plugin.version>
-        <sla.version>12.130524-3</sla.version>
-        <jtcspk.version>9.71-4</jtcspk.version>
+        <sla.version>12.130524-4</sla.version>
+        <jtcspk.version>9.71-5</jtcspk.version>
         <jcil.version>1.0.0</jcil.version>
-        <jtpoint.version>18.13-7</jtpoint.version>
-        <tinyxml.version>2.6.2</tinyxml.version>
-        <jtpk.version>2.3-7</jtpk.version>
-        <sextractor.version>2.5.0-SNAPSHOT</sextractor.version>
+        <jtpoint.version>18.13-8</jtpoint.version>
+        <tinyxml.version>2.6.2-1</tinyxml.version>
+        <jtpk.version>2.3-8</jtpk.version>
         <log4j2.version>2.17.0</log4j2.version>
         <disruptor-version>3.4.2</disruptor-version>
         <junit.version>4.13.2</junit.version>

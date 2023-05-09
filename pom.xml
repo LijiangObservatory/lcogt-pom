@@ -5,7 +5,7 @@
     <artifactId>lcogt-pom</artifactId>
     <packaging>pom</packaging>
     <name>Super pom</name>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <description>Pom to be inherited by all lcogt projects.</description>
     <organization>
         <name>Las Cumbres Observatory</name>
@@ -163,9 +163,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.4.1</version>
+                <version>3.5.0</version>
                 <configuration>
                     <additionalparam>-Xdoclint:none</additionalparam>
+                    <show>public</show>
                 </configuration>
             </plugin>
             <plugin>
@@ -191,9 +192,10 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10.2</version>
+                    <version>3.5.0</version>
                     <configuration>
                         <additionalparam>-Xdoclint:none</additionalparam>
+                        <show>public</show>
                     </configuration>
                 </plugin>
                 <plugin>

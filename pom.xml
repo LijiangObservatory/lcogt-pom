@@ -167,6 +167,7 @@
                 <configuration>
                     <additionalparam>-Xdoclint:none</additionalparam>
                     <show>public</show>
+                    <failOnError>false</failOnError>
                 </configuration>
             </plugin>
             <plugin>
@@ -196,6 +197,7 @@
                     <configuration>
                         <additionalparam>-Xdoclint:none</additionalparam>
                         <show>public</show>
+                        <failOnError>false</failOnError>
                     </configuration>
                 </plugin>
                 <plugin>

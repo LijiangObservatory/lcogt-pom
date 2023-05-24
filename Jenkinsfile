@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-@Library('lco-shared-libs@0.1.0') _
+@Library('lco-shared-libs@0.2.0') _
 
 pipeline {
 	agent any

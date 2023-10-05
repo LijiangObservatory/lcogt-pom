@@ -340,12 +340,12 @@
         <repository>
             <id>nexus</id>
             <name>releases</name>
-            <url>http://buildsba.lco.gtn:8081/nexus/content/repositories/releases</url>
+            <url>http://core1:8081/repository/maven-releases</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>snapshots</name>
-            <url>http://buildsba.lco.gtn:8081/nexus/content/repositories/snapshots</url>
+            <url>http://core1:8081/repository/maven-snapshots</url>
         </snapshotRepository>
         <site>
             <id>buildsba</id>
